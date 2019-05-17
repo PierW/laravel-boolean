@@ -49,7 +49,6 @@ nav {
       border-radius: 2px;
       cursor: pointer;
       margin-left: 20px;
-      font-size: 1.1em;
-      display: none; }
+      font-size: 1.1em; }
       nav > .right-side button:hover {
         background-color: #f5874f; }
