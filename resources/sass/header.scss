@@ -1,11 +1,12 @@
 nav {
-  width: 100vw;
+  width: 100%; //Fare 100 vw solo se non è prevista la scrollbar. Es. semplice pagina con layover.
   height: 80px;
   box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
   padding: 0 20px;
   position: fixed;
   top: 0;
   background-color: white;
+  z-index: 1;
 
   &::after {
     content: "";
@@ -46,18 +47,8 @@ nav {
     }
 
     button {
-      background-color: #F47637;
-      padding: 10px 20px;
-      color: white;
-      border: none;
-      border-radius: 2px;
-      cursor: pointer;
+      @include button;
       margin-left: 20px;
-      font-size: 1.1em;
-
-      &:hover{
-        background-color: lighten(#F47637, 5%);
-      }
     }
   }
 }

@@ -14,12 +14,26 @@ $pink: #f66d9b;
 $red: #e3342f;
 $orange: #f6993f;
 $yellow: #ffed4a;
-$green: #38c172;
+$green: #61CE4E;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
 @mixin pt-3 {
   padding-top: 20px;
+}
+
+@mixin button {
+  background-color: #F47637;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1.1em;
+
+  &:hover{
+    background-color: lighten(#F47637, 5%);
+  }
 }
 
 *{
