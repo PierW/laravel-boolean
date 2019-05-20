@@ -1,0 +1,55 @@
+footer {
+  width: 100%;
+
+  > .foo-list {
+    height: 250px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+
+    > .col-3{
+      flex-basis: 25%;
+      padding: 10px 25px;
+      height: 100px;
+      margin: auto;
+
+      img{
+        max-height: 100%;
+      }
+
+      a{
+        display: block;
+        text-decoration: none;
+        color: #1B3C59;
+        font-size: 13px;
+        margin-left: 20%;
+      }
+
+    }
+
+    >.col-3.pt-3{
+      @include pt-3;
+    }
+
+    >.col-3.social{
+      text-align: right;
+      word-spacing: 10px;
+    }
+  }
+
+  > .foo-bottom{
+    height: 70px;
+    line-height: 70px;
+    background-color: $blue;
+    color: white;
+    font-size: 12px;
+
+    > .foo-details{
+      width: 80%;
+      margin: auto;
+      padding: 0 25px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

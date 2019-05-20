@@ -15,7 +15,8 @@ nav {
   box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
   padding: 0 20px;
   position: fixed;
-  top: 0; }
+  top: 0;
+  background-color: white; }
   nav::after {
     content: "";
     display: table;
@@ -52,3 +53,54 @@ nav {
       font-size: 1.1em; }
       nav > .right-side button:hover {
         background-color: #f5874f; }
+
+main {
+  margin-top: 80px;
+  width: 100%; }
+  main .main {
+    width: 80%;
+    margin: auto;
+    padding: 0 25px;
+    height: 400px;
+    display: flex; }
+    main .main > * {
+      flex-basis: 50%;
+      padding: 50px; }
+
+footer {
+  width: 100%; }
+  footer > .foo-list {
+    height: 250px;
+    width: 80%;
+    margin: auto;
+    display: flex; }
+    footer > .foo-list > .col-3 {
+      flex-basis: 25%;
+      padding: 10px 25px;
+      height: 100px;
+      margin: auto; }
+      footer > .foo-list > .col-3 img {
+        max-height: 100%; }
+      footer > .foo-list > .col-3 a {
+        display: block;
+        text-decoration: none;
+        color: #1B3C59;
+        font-size: 13px;
+        margin-left: 20%; }
+    footer > .foo-list > .col-3.pt-3 {
+      padding-top: 20px; }
+    footer > .foo-list > .col-3.social {
+      text-align: right;
+      word-spacing: 10px; }
+  footer > .foo-bottom {
+    height: 70px;
+    line-height: 70px;
+    background-color: #1B3C59;
+    color: white;
+    font-size: 12px; }
+    footer > .foo-bottom > .foo-details {
+      width: 80%;
+      margin: auto;
+      padding: 0 25px;
+      display: flex;
+      justify-content: space-between; }
