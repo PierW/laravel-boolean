@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('layout.layout');
+    return view('layout.home');
+});
+
+Route::get('/faq', function () {
+    return view('layout.faq');
 });
